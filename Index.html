@@ -40,13 +40,25 @@
 			font-style: normal;
 		}
 
+		@keyframes mueveImagen {
+			from {}
+
+			to {
+				transform: scale(6);
+				transform: translateX(-200px);
+			}
+
+		}
+
 		.articulo {
 			width: 30%;
 		}
 
 		.articulo:hover {
-			transform: scale(6);
-			transform: translateX(-200px);
+
+			animation-name: mueveImagen;
+			animation-duration: 1s;
+
 		}
 	</style>
 
