@@ -6,7 +6,7 @@ body {
   background-image: linear-gradient(90deg, #eef196b2 0%, #3ad59fbb 100%);
 
   /* ajustado por altura del header para permitir scroll por debajo */
-  padding-top: 9.6em;
+  padding-top: 10.6em;
 }
 
 h2 {
