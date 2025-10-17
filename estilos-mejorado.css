@@ -4,11 +4,15 @@ body {
   /* background-image: (90deg, #f8ff00 0%, #3ad59f 100%);
    */
   background-image: linear-gradient(90deg, #eef196b2 0%, #3ad59fbb 100%);
+
+  /* ajustado por altura del header para permitir scroll por debajo */
+  padding-top: 11.5em;
 }
 
 h2 {
   text-shadow: 3px 3px 5px black;
 }
+
 .articulo {
   max-width: 100%;
   height: auto;
@@ -110,9 +114,16 @@ h2 {
 /* Fondo animado en el encabezado */
 header {
   background: linear-gradient(-45deg, #ff9800, #f44336, #2196f3, #4caf50);
-  background-size: 400% 400%;
+  /* background-size: 100% 100%; */
   animation: fondoAnimado 10s ease infinite;
+  /* agregado para fijar el bloque */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
+
 
 @keyframes fondoAnimado {
   0% {
@@ -134,6 +145,7 @@ header {
 }
 
 @keyframes latido {
+
   0%,
   100% {
     transform: scale(1);
@@ -179,6 +191,7 @@ button {
   border-radius: 6px;
   font-weight: bold;
 }
+
 button:hover {
   background: #13ee0cb7;
   box-shadow: 2px 2px 6px black;
@@ -187,4 +200,3 @@ button:hover {
 .sombraTarjeta {
   box-shadow: 5px 5px 19px black;
 }
-
