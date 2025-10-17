@@ -122,8 +122,21 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
+
+  background: linear-gradient(90deg, #cb790e 0%, #23a5d4 35%, #f4103a 70%, #0d0c0e 100%);
+  box-shadow: 0 2px 12px -7px #9993;
 }
 
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6,
+header .header-text {
+  color: #443e59;
+  text-shadow: 2px 2px 20px #20ef09, 1px 1px 2px #000000;
+}
 
 @keyframes fondoAnimado {
   0% {
