@@ -1,23 +1,23 @@
 // Array de productos - Puedes personalizar imagen, nombre y precio
 const productosData = [
   {
-    nombre: "Camiseta Deportiva", 
-    precio: 7500, 
+    nombre: "Camiseta Deportiva",
+    precio: 7500,
     imagen: "https://images.unsplash.com/photo-1517649763962-f3c5b16613c7?auto=format&fit=crop&w=400&q=80"
   },
   {
-    nombre: "Short de Running", 
-    precio: 5800, 
+    nombre: "Short de Running",
+    precio: 5800,
     imagen: "https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=400&q=80"
   },
   {
-    nombre: "Pack 2 Medias", 
-    precio: 1900, 
+    nombre: "Pack 2 Medias",
+    precio: 1900,
     imagen: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=400&q=80"
   },
   {
-    nombre: "Buzo con Capucha", 
-    precio: 11200, 
+    nombre: "Buzo con Capucha",
+    precio: 11200,
     imagen: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
   }
 ];
@@ -49,6 +49,7 @@ function renderProductos() {
 function agregarAlCarrito(nombre, precio) {
   carrito.push({ nombre, precio });
   mostrarCarrito();
+      actualizarContadorCarrito(); // agregado con ia
 }
 
 function mostrarCarrito() {
@@ -68,9 +69,15 @@ function mostrarCarrito() {
   });
 }
 
+// agregado con ia para ver en el carrito 
+function actualizarContadorCarrito() {
+  document.getElementById('carrito-contador').textContent = carrito.length;
+}
+
 function quitarDelCarrito(indice) {
   carrito.splice(indice, 1);
   mostrarCarrito();
+      actualizarContadorCarrito(); // agregado con ia
 }
 
 function enviarPorWhatsApp() {
@@ -92,4 +99,5 @@ function enviarPorWhatsApp() {
 window.onload = () => {
   renderProductos();
   mostrarCarrito();
+      actualizarContadorCarrito(); // agregado con ia
 };
