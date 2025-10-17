@@ -183,3 +183,8 @@ button:hover {
   background: #13ee0cb7;
   box-shadow: 2px 2px 6px black;
 }
+
+.sombraTarjeta {
+  box-shadow: 5px 5px 19px black;
+}
+
